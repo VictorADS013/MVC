@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Meus amigos do peito</title>
+
+</head>
+<body>
+<h1> Lista de Migles do lias</h1>
+<table>
+    <thead>
+    <tr>
+        <th>Nome do criminoso</th>
+        <th>Apelido</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr th:each="amigo: ${amigos}" >
+        <td th:text="${amigo.nome}">Nome</td>
+        <td th:text="${amigo.apelido}" >Apelido</td>
+    </tr>
+    </tbody>
+</table>
+
+<hr>
+</body>
+</html>
